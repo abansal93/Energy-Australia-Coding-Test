@@ -1,4 +1,3 @@
-from urllib import request
 import requests as req
 import json
 import logging
