@@ -52,7 +52,7 @@ def verifyAllTestCases(respObj: request):
         if(respObj.text == "Too many requests, throttling"):
             logging.info(f"## FAILED ##Correct URL --> {requestURL}--> Response is  -->{respObj.status_code}\
                 \nToo many requests, throttling")
-## Test Case 2.2     ## --> response is not 200 and UN-AUTHARIZED REQUESTS
+## Test Case 2.2     ## --> response is not 200  UN-AUTHORIZED/SERVER ERROR REQUESTS
         else:
             logging.info(f"## FAILED ##Correct URL --> {requestURL}--> Response is  -->{respObj.status_code}")
 
